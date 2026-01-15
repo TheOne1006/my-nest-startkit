@@ -6,11 +6,25 @@
 
 ## 目录
 
-1. [Schema 设计 (Schema Design)](#1-schema-设计-schema-design)
-2. [迁移工作流 (Migrations Workflow)](#2-迁移工作流-migrations-workflow)
-3. [查询最佳实践 (Querying Best Practices)](#3-查询最佳实践-querying-best-practices)
-4. [性能优化 (Performance Optimization)](#4-性能优化-performance-optimization)
-5. [数据填充 (Seeding)](#5-数据填充-seeding)
+- [Prisma \& PostgreSQL 最佳实践参考](#prisma--postgresql-最佳实践参考)
+  - [目录](#目录)
+  - [1. Schema 设计 (Schema Design)](#1-schema-设计-schema-design)
+    - [命名规范](#命名规范)
+    - [关系定义](#关系定义)
+  - [2. 迁移工作流 (Migrations Workflow)](#2-迁移工作流-migrations-workflow)
+    - [开发环境](#开发环境)
+    - [生产环境](#生产环境)
+    - [团队协作](#团队协作)
+  - [3. 查询最佳实践 (Querying Best Practices)](#3-查询最佳实践-querying-best-practices)
+    - [选择所需字段 (Select)](#选择所需字段-select)
+    - [关联查询 (Relation Queries)](#关联查询-relation-queries)
+    - [事务 (Transactions)](#事务-transactions)
+  - [4. 性能优化 (Performance Optimization)](#4-性能优化-performance-optimization)
+    - [索引 (Indexing)](#索引-indexing)
+    - [N+1 问题](#n1-问题)
+    - [连接池 (Connection Pooling)](#连接池-connection-pooling)
+  - [5. 数据填充 (Seeding)](#5-数据填充-seeding)
+    - [最佳实践](#最佳实践)
 
 ---
 
